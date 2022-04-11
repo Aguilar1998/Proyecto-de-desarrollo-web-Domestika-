@@ -1,0 +1,239 @@
+/* Normalize */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 19px;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    writing-mode: horizontal-tb;
+    color: #f5f0ed;
+}
+
+
+
+/* normalizar los enlaces para que no tengan estilos y un color especifico */
+
+
+ol, ul {
+    list-style: none;
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* Estilos generales ----------*/
+
+
+/* navegador */
+.section{
+    background-image: url(/assets/image/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+}
+.navBar{
+    background-color: none;
+}
+.navBar ul{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.navBar ul li{
+    margin: 0 1rem;
+    /* background-color: black; */
+    display: inline;
+    right: 1rem;
+    top: 1rem;
+}
+
+/* presentacion -----------*/
+.container__Principal{
+    text-align: center;
+    margin: 15rem auto 0;
+    width: 50%;
+}
+.container__Principal h1{
+    margin: 1rem;
+    font-size: 50px;
+}
+.container__Principal div{
+    width: 15%;
+    background-color: #f5f0ed;
+    height: 2px;
+    margin: 2rem auto;
+}
+
+
+
+/* invitacion --------*/
+
+.container-2{
+    background-color: #d03b40;
+    width: 50%;
+    height: 25em;
+    text-align: center;
+    padding: 8rem 0;
+    float: left;
+}
+.container-2 h2{
+    width: 50%;
+    margin: 1rem auto;
+    font-size: 1.8em;
+}
+.container-2 p{
+    width: 70%;
+    margin: 1rem auto;
+}
+
+
+.container-3{
+    display: inline-block;
+    background-color: #f5f0ed;
+    color: #d03b40;
+    width: 50%;
+    height: 25em;
+    text-align: center;
+    padding: 8rem 0;
+}
+.container-3 h2{
+    width: 60%;
+    margin: 1rem auto;
+    font-size: 1.8em;
+}
+.container-3 p{
+    width: 70%;
+    margin: 1rem auto;
+}
+
+
+
+/* invitacion al Desayuno -------------*/
+
+.desayuno{
+    background-image: url(/assets/image/Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 31.5em;
+    text-align: center;
+}
+.desayuno h2{
+    padding-top: 10rem;
+    font-size: 50px;
+}
+.desayuno div{
+    background-color: #f5f0ed;
+    width: 10%;
+    height: 2px;
+    margin: 2rem auto;
+}
+.desayuno p{
+    margin: 1rem auto;
+    width: 50%;
+}
+
+.desayuno  .bottom{
+    display: block;
+    border: 4px solid #f5f0ed;
+    padding: 1rem;
+    margin: 3rem auto;
+    width: 30%;
+    font-size: 20px;
+}
+
+/* Contactos y ubicacion------------------- */
+
+.degustaciones{
+    background-color: red;
+    position: relative;
+    background-color:  #f5f0ed;
+    width: 50%;
+    float: left;
+    height: 16em;
+    padding: 4rem auto 0;
+}
+.degustaciones img{
+    float: left;
+    margin: 4rem 0;
+    padding: 0 2rem;
+}
+.degustaciones h2{
+    color: #3c3c3b;
+    margin: 4rem 0 0;
+    width: 100%;
+}
+.degustaciones p{
+    text-align: left;
+    color: rgb(118, 102, 102);
+}
+
+
+
+/*Contacto/sobre nosotros-------------------*/
+.contacto{
+    background-color: #ffedbb;
+    color: #d03b40;
+    width: 50%;
+    text-align: center;
+    float: left;
+    height: 20em;
+}
+.contacto h2{
+    width: 50%;
+    margin: auto;
+    padding: 6rem 0 2rem;
+}
+.contacto p{
+    width: 70%;
+    margin: auto;
+}
+.ubicacion{
+    width: 50%;
+    text-align: center;
+    background-color: #d03b40;
+    color: #fde1d0e2;
+    height: 20em;
+    float: left;
+}
+.ubicacion h2{
+    width: 50%;
+    margin: auto;
+    padding: 6rem 0 2rem;
+}
+.ubicacion p{
+    width: 70%;
+    margin: auto;
+}
+
+/* footer------------------- */
+
+.footer{
+    background-color: #3c3c3b;
+    color: #f5f0ed;
+    width: 100%;
+    height: 5rem;
+    clear: both;
+    padding: 5rem 0 5rem 1rem;
+}
+
+
+
+
+
+
+@media (max-width:1000px){
+    .section .navBar .container__Principal h1{
+        font-size: 10px;
+    }
+}
