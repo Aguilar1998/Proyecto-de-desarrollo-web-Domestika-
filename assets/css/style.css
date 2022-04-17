@@ -229,7 +229,14 @@ a{
 }
 
 
+
+
+/*Para implementar @query y realizar un full responsive necesite crear varios @query...(max-width:1000/800/620px)*/
+
 @media (max-width:1000px){
+    .section{
+        height: 45rem;
+    }
     .section .container__Principal h1{
         font-size: 30px;
     }
@@ -237,7 +244,7 @@ a{
         font-size: 16px;
     }
 
-    /* invitacion --------*/
+    /*invitacion --------*/
     .container-2{
         background-color: #d03b40;
         width: 50%;
@@ -257,7 +264,6 @@ a{
         font-size: 14px;
     }
 
-
     /*Invitacion 2 ---------- */
     .container-3{
         height: 20em;
@@ -273,7 +279,6 @@ a{
     }
     
     /* invitacion al Desayuno -------------*/
-
     .desayuno{
         background-image: url(/assets/image/Fondo2.jpg);
         background-repeat: no-repeat;
@@ -304,7 +309,6 @@ a{
     }
 
     /* Contactos y ubicacion------------------- */
-
     .degustaciones{
         background-color: red;
         position: relative;
@@ -367,3 +371,57 @@ a{
         font-size: 15px;
     }
 }
+
+
+
+
+/* media de 800px------------------------ */
+@media (max-width:800px) {
+    .section{
+        padding: 0 1rem 20rem;
+        height: 40rem;
+    }
+    .section .container__Principal h1{
+        font-size: 30px;
+    }
+
+    /* Degustaciones------------------- */
+    .degustaciones{
+        background-color: red;
+        position: relative;
+        background-color:  #f5f0ed;
+        width: 50%;
+        float: left;
+        height: 22em;
+        padding: 4rem auto 0;
+        font-size: 10px;
+    }
+    .degustaciones img{
+        float: left;
+        margin: 1rem 0;
+        padding: 0 1rem;
+        width: 7rem;
+    }
+    .degustaciones h2{
+        color: #3c3c3b;
+        margin: 1rem 0 0;
+        width: 100%;
+        font-size: 12px;
+    }
+    .degustaciones p{
+        text-align: left;
+        color: rgb(118, 102, 102);
+    }
+    .navBar ul{
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+    .navBar ul li{
+        margin: 0 1rem;
+        display: inline;
+        right: 1rem;
+        top: 1rem;
+    }
+}
+
