@@ -9,7 +9,7 @@
 }
 
 body {
-    font-size: 25px;
+    font-size: 16px;
     line-height: 1;
     font-family: 'Open Sans', sans-serif;
     writing-mode: horizontal-tb;
@@ -41,28 +41,34 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    padding: 0 1rem 30rem;
+    padding: 0 1rem 45em;
+}
+.subMenu{
+    display: none;
 }
 .navBar{
     background-color: none;
 }
 .section .navBar a img{
-    width: 20rem;
+    width: 16rem;
     margin-top: 1rem;
-    margin-left: 10rem;
+    margin-left: 10em;
 }
 .navBar ul{
-    font-size: 3rem;
+    font-size: 2rem;
     position: absolute;
-    right: 5em;
+    right: 4em;
     top: 3rem;
 }
 .navBar ul li{
     margin: 0 1rem;
-    /* background-color: black; */
     display: inline;
     right: 1rem;
     top: 1rem;
+}
+.navBar ul li:hover{
+    color: red;
+    border-bottom: 1px solid white;
 }
 
 /* presentacion -----------*/
@@ -73,15 +79,18 @@ a{
 }
 .container__Principal h1{
     margin: 1rem;
-    font-size: 50px;
+    font-size: 44px;
 }
 .container__Principal div{
     width: 15%;
     background-color: #f5f0ed;
     height: 2px;
     margin: 2rem auto;
+    max-width: 6rem;
 }
-
+.container__Principal p{
+    font-size: 16px;
+}
 
 
 /* invitacion --------*/
@@ -102,6 +111,7 @@ a{
 .container-2 p{
     width: 70%;
     margin: 1rem auto;
+    font-size: 16px;
 }
 
 
@@ -122,6 +132,7 @@ a{
 .container-3 p{
     width: 70%;
     margin: 1rem auto;
+    font-size: 16px;
 }
 
 
@@ -137,26 +148,28 @@ a{
 }
 .desayuno h2{
     padding-top: 10rem;
-    font-size: 50px;
+    font-size: 28px;
 }
 .desayuno div{
     background-color: #f5f0ed;
     width: 10%;
     height: 2px;
     margin: 2rem auto;
+    max-width: 6rem;
 }
 .desayuno p{
     margin: 1rem auto;
     width: 50%;
+    font-size: 16px;
 }
 
 .desayuno  .bottom{
     display: block;
     border: 4px solid #f5f0ed;
-    padding: 1rem;
-    margin: 3rem auto;
-    width: 30%;
-    font-size: 20px;
+    padding: 1rem 4rem; 
+    margin: 6rem auto;
+    width: max-content;
+    font-size: 14px;
 }
 
 /* Contactos y ubicacion------------------- */
@@ -174,6 +187,7 @@ a{
     float: left;
     margin: 4rem 0;
     padding: 0 2rem;
+    min-width: 5rem;
 }
 .degustaciones h2{
     color: #3c3c3b;
@@ -183,6 +197,7 @@ a{
 .degustaciones p{
     text-align: left;
     color: rgb(118, 102, 102);
+    font-size: 16px;
 }
 
 
@@ -195,6 +210,7 @@ a{
     text-align: center;
     float: left;
     height: 20em;
+    font-size: 24px;
 }
 .contacto h2{
     width: 50%;
@@ -204,6 +220,7 @@ a{
 .contacto p{
     width: 70%;
     margin: auto;
+    font-size: 16px;
 }
 .ubicacion{
     width: 50%;
@@ -212,6 +229,7 @@ a{
     color: #fde1d0e2;
     height: 20em;
     float: left;
+    font-size: 24px;
 }
 .ubicacion h2{
     width: 50%;
@@ -221,6 +239,7 @@ a{
 .ubicacion p{
     width: 70%;
     margin: auto;
+    font-size: 16px;
 }
 
 /* footer------------------- */
@@ -229,23 +248,61 @@ a{
     background-color: #3c3c3b;
     color: #f5f0ed;
     width: 100%;
-    height: 5rem;
+    height: 16rem;
     clear: both;
-    padding: 5rem 0 5rem 1rem;
+    padding: 5rem 0 5rem 2rem;
 }
+
+
 
 
 
 
 /*Para implementar @query y realizar un full responsive necesite crear varios @query...(max-width:1000/800/700px)*/
-@media (max-width:2000px){
-    .section .navBar a img{
-        width: 13rem;
-    }
+
+/* media de 1800------------------------- */
+@media (max-width:1800px){
     .section .navBar ul{
         font-size: 20px;
     }
+    .section .navBar a img{
+        width: 15rem;
+        margin-top: 8px;
+    }
 }
+@media (max-width:1200px){
+    .section .navBar{
+        display: none;
+    }
+    .section .subMenu{
+        display: block;
+        position: relative;
+        top: 1rem;
+        left: 2em;
+    }
+    .section .subMenu ul{
+        margin-top: 5rem;
+        font-size: x-large;
+        padding-bottom: 1rem;
+    }
+    .section .subMenu a img{
+        position: relative;
+        top: 2rem;
+        left: 38%;
+        /* margin: auto; */
+    }
+    .section .subMenu ul li{
+        margin: 1rem 0;
+    }
+    .subMenu ul li:hover{
+        border-bottom: 1px solid white;
+        width: 20%;
+    }
+    .container__Principal{
+        margin-top: 0%;
+    }
+}
+/* media de 1000px----------------------- */
 @media (max-width:1000px){
     .section{
         height: 45rem;
@@ -257,7 +314,7 @@ a{
         font-size: 16px;
     }
 
-    /*invitacion --------*/
+    /* invitacion -------- */
     .container-2{
         height: 20em;
     }
@@ -269,7 +326,7 @@ a{
         font-size: 16px;
     }
 
-    /*Invitacion 2 ---------- */
+    /* Invitacion 2 ---------- */
     .container-3{
         height: 20em;
         padding: 8rem 1rem;
@@ -283,7 +340,7 @@ a{
         font-size: 16px;
     }
     
-    /* invitacion al Desayuno -------------*/
+    /* invitacion al Desayuno ------------- */
     .desayuno{
         height: 24rem;
     }
@@ -309,17 +366,12 @@ a{
         margin: 2rem 0;
         padding: 0 1rem;
     }
-    /* .degustaciones h2{
-        color: #3c3c3b;
-        margin: 4rem 0 0;
-        width: 100%;
-    } */
     .degustaciones p{
         text-align: left;
         color: rgb(118, 102, 102);
     }
 
-    /*Contacto/sobre nosotros-------------------*/
+    /* Contacto/sobre nosotros------------------- */
     .contacto{
         background-color: #ffedbb;
         color: #d03b40;
@@ -360,60 +412,20 @@ a{
 
 /* media de 800px------------------------ */
 @media (max-width:800px) {
-    /* menu desplegable------------------ */
-    /* .js .navegacion{
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height .5s;
-        position: absolute;
-        top: 43px;
-        left: 30px;
-        right: 30px;
-        background-color: #2d211f;
-    }
-
-    .js .navefacion a{
-        padding: 5px 10px;
-        color: #fff;
-        border-top: 1px solid rgba(255, 255, 255, .4);
-    }
-    .js .navegacion .meni-desplegado{
-        max-height: 200px;
-    } */
-
     .section{
         padding: 0 1rem 20rem;
         height: 40rem;
         min-width: 700px;
     }
-    .section .navBar{
-        display: block;
-        width: 100%;
-        height: 25rem;
-        background-color: red;
-    }
-    .section .navBar a{
-        margin: auto;
-        text-align: center;
-        width: max-content;
-    }
-    .section .navBar a img{
-        margin: auto;
-        padding: 0%;
-    }
-    .section .navBar ul{
-        margin: 2rem 40%;
-    }
-    .section .navBar ul li{
-        display: block;
-        margin: 1rem;
-        font-size: 35px;
-    }
-
-
     
     .section .container__Principal h1{
         font-size: 30px;
+    }
+    .desayuno{
+        min-height: 35rem;
+    }
+    .desayuno .bottom{
+        min-width: 20rem;
     }
 
     /* Degustaciones------------------- */
