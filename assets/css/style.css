@@ -9,7 +9,7 @@
 }
 
 body {
-    font-size: 19px;
+    font-size: 25px;
     line-height: 1;
     font-family: 'Open Sans', sans-serif;
     writing-mode: horizontal-tb;
@@ -46,10 +46,16 @@ a{
 .navBar{
     background-color: none;
 }
+.section .navBar a img{
+    width: 20rem;
+    margin-top: 1rem;
+    margin-left: 10rem;
+}
 .navBar ul{
+    font-size: 3rem;
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: 5em;
+    top: 3rem;
 }
 .navBar ul li{
     margin: 0 1rem;
@@ -232,7 +238,14 @@ a{
 
 
 /*Para implementar @query y realizar un full responsive necesite crear varios @query...(max-width:1000/800/700px)*/
-
+@media (max-width:2000px){
+    .section .navBar a img{
+        width: 13rem;
+    }
+    .section .navBar ul{
+        font-size: 20px;
+    }
+}
 @media (max-width:1000px){
     .section{
         height: 45rem;
