@@ -36,14 +36,6 @@ a{
 
 
 /* navegador */
-.section{
-    /* background-image: url(../image/Fondo1.jpg); */
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-    /* width: 100%;
-    height: 100%; */
-    /* padding: 0 1rem 45em; */
-}
 .section img{
     width: 100%;
     height: 100%;
@@ -271,16 +263,6 @@ a{
 
 /*Para implementar @query y realizar un full responsive necesite crear varios @query...(max-width:1000/800/700px)*/
 
-/* media de 1800------------------------- */
-/* @media (max-width:1800px){
-    .section .navBar ul{
-        font-size: 2vw;
-    }
-    .section .navBar a img{
-        width: 15rem;
-        margin-top: 8px;
-    }
-} */
 @media (max-width:1250px){
     .section{
         min-width: 900px;
@@ -328,11 +310,12 @@ a{
 @media (max-width:1000px){
     /* invitacion -------- */
     .container-2{
-        height: 20em;
+        width: 50%;
+        height: 25em;
     }
     .container-2 h2{
         width: 80%;
-        font-size: 20px;
+        font-size: 3vw;
     }
     .container-2 p{
         font-size: 16px;
@@ -340,12 +323,13 @@ a{
 
     /* Invitacion 2 ---------- */
     .container-3{
-        height: 20em;
-        padding: 8rem 1rem;
+        width: 50%;
+        height: 25em;
+        /* padding: 8rem 1rem; */
     }
     .container-3 h2{
         width: 80%;
-        font-size: 20px;
+        font-size: 3vw;
     }
     .container-3 p{
         width: 80%;
@@ -430,7 +414,6 @@ a{
     .desayuno .bottom{
         min-width: 20rem;
     }
-
     /* Degustaciones------------------- */
     .degustaciones{
         width: 100%;
@@ -449,10 +432,9 @@ a{
 
 
 /* media de 700px------------------------ */
-@media (max-width:700px){
-    .section{
-        height: 45rem;
-        min-width: 700px;
+@media (max-width:900px){
+    .section .container__Principal{
+        margin: 0 2rem;
     }
     .section .container__Principal h1{
         font-size: 4vh;
@@ -460,22 +442,22 @@ a{
 
     /*invitacion --------*/
     .container-2{
-        width: 50%;
-        height: 20em;
+        width: 100%;
         padding: 8rem 0;
-        float: left;
-        min-width: 700px;
+        float: none;
+        min-width: 880px;
     }
 
     /*Invitacion 2 ---------- */
     .container-3{
-        min-width: 700px;
+        width: 100%;
+        min-width: 880px;
     }
     
     /* invitacion al Desayuno -------------*/
     .desayuno{
         width: 100%;
-        min-width: 700px;
+        min-width: 880px;
     }
     .desayuno div{
         width: 15%;
@@ -486,7 +468,8 @@ a{
 
     /* Degustaciones------------------- */
     .degustaciones{
-        min-width: 700px;
+        margin: 0 1rem;
+        min-width: 880px;
     }
     .degustaciones h2{
         width: 90%;
@@ -499,17 +482,17 @@ a{
 
     /*Contacto/sobre nosotros-------------------*/
     .contacto{
-        min-width: 700px;
+        min-width: 880px;
     }
     .ubicacion{
         width: 50%;
         height: 20em;
-        min-width: 700px;
+        min-width: 880px;
     }
 
     /* Footer------------------- */
 
     .footer{
-        min-width: 700px;
+        min-width: 880px;
     }
 }
