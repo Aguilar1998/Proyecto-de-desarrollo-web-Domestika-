@@ -37,11 +37,18 @@ a{
 
 /* navegador */
 .section{
-    background-image: url(../image/Fondo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url(../image/Fondo1.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* width: 100%;
+    height: 100%; */
+    /* padding: 0 1rem 45em; */
+}
+.section img{
     width: 100%;
-    padding: 0 1rem 45em;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 .subMenu{
     display: none;
@@ -50,9 +57,11 @@ a{
     background-color: none;
 }
 .section .navBar a img{
-    width: 16rem;
-    margin-top: 1rem;
-    margin-left: 10em;
+    position: absolute;
+    left: 4em;
+    top: 2rem;
+    width: min-content;
+    height: min-content;
 }
 .navBar ul{
     font-size: 2rem;
@@ -73,13 +82,14 @@ a{
 
 /* presentacion -----------*/
 .container__Principal{
+    position: absolute;
+    top: 25%;
+    left: 5%;
     text-align: center;
-    margin: 15rem auto 0;
-    width: 50%;
 }
 .container__Principal h1{
     margin: 1rem;
-    font-size: 44px;
+    font-size: 4vw;
 }
 .container__Principal div{
     width: 15%;
@@ -90,6 +100,7 @@ a{
 }
 .container__Principal p{
     font-size: 16px;
+    margin: 0% 4rem;
 }
 
 
@@ -261,35 +272,41 @@ a{
 /*Para implementar @query y realizar un full responsive necesite crear varios @query...(max-width:1000/800/700px)*/
 
 /* media de 1800------------------------- */
-@media (max-width:1800px){
+/* @media (max-width:1800px){
     .section .navBar ul{
-        font-size: 20px;
+        font-size: 2vw;
     }
     .section .navBar a img{
         width: 15rem;
         margin-top: 8px;
     }
-}
-@media (max-width:1200px){
+} */
+@media (max-width:1250px){
+    .section{
+        min-width: 900px;
+        position: relative;
+        
+    }
     .section .navBar{
         display: none;
-    }
+    } 
     .section .subMenu{
         display: block;
-        position: relative;
+        position: absolute;
         top: 1rem;
         left: 2em;
-    }
+    } 
     .section .subMenu ul{
         margin-top: 5rem;
         font-size: x-large;
         padding-bottom: 1rem;
     }
     .section .subMenu a img{
-        position: relative;
-        top: 2rem;
-        left: 38%;
-        /* margin: auto; */
+        position: absolute;
+        width: max-content;
+        height: min-content;
+        top: 2px;
+        left: 3px;
     }
     .section .subMenu ul li{
         margin: 1rem 0;
@@ -299,21 +316,16 @@ a{
         width: 20%;
     }
     .container__Principal{
-        margin-top: 0%;
+        position: absolute;
+        left: 2%;
+        top: 50%;
+    }
+    .container__Principal h1{
+        font-size: 4vw;
     }
 }
 /* media de 1000px----------------------- */
 @media (max-width:1000px){
-    .section{
-        height: 45rem;
-    }
-    .section .container__Principal h1{
-        font-size: 30px;
-    }
-    .section .container__Principal p{
-        font-size: 16px;
-    }
-
     /* invitacion -------- */
     .container-2{
         height: 20em;
@@ -412,15 +424,6 @@ a{
 
 /* media de 800px------------------------ */
 @media (max-width:800px) {
-    .section{
-        padding: 0 1rem 20rem;
-        height: 40rem;
-        min-width: 700px;
-    }
-    
-    .section .container__Principal h1{
-        font-size: 30px;
-    }
     .desayuno{
         min-height: 35rem;
     }
@@ -450,6 +453,9 @@ a{
     .section{
         height: 45rem;
         min-width: 700px;
+    }
+    .section .container__Principal h1{
+        font-size: 4vh;
     }
 
     /*invitacion --------*/
