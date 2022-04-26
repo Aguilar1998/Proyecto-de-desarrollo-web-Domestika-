@@ -141,36 +141,50 @@ a{
 
 
 /* invitacion al Desayuno -------------*/
-
 .desayuno{
-    background-image: url(../image/Fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 31.5em;
     text-align: center;
+    position: relative;
+}
+.desayuno img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 .desayuno h2{
-    padding-top: 10rem;
-    font-size: 28px;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    font-size: 4vw;
+    margin: auto;
 }
 .desayuno div{
     background-color: #f5f0ed;
+    position: absolute;
+    top: 30%;
+    left: 46%;
     width: 10%;
     height: 2px;
-    margin: 2rem auto;
     max-width: 6rem;
 }
 .desayuno p{
-    margin: 1rem auto;
+    position: absolute;
+    top: 35%;
+    left: 24%;
     width: 50%;
+    margin: auto;
     font-size: 16px;
 }
 
 .desayuno  .bottom{
-    display: block;
+    position: absolute;
+    top: 65%;
+    left: 34%;
+    /* display: block; */
     border: 4px solid #f5f0ed;
     padding: 1rem 4rem; 
-    margin: 6rem auto;
+    margin: auto;
     width: max-content;
     font-size: 14px;
 }
@@ -337,7 +351,7 @@ a{
     }
     
     /* invitacion al Desayuno ------------- */
-    .desayuno{
+    /* .desayuno{
         height: 24rem;
     }
     .desayuno h2{
@@ -351,7 +365,7 @@ a{
     .desayuno  .bottom{
         font-size: 10px;
         margin-top: 1rem 0;
-    }
+    } */
 
     /* Contactos y ubicacion------------------- */
     .degustaciones{
@@ -408,12 +422,12 @@ a{
 
 /* media de 800px------------------------ */
 @media (max-width:800px) {
-    .desayuno{
+    /* .desayuno{
         min-height: 35rem;
     }
     .desayuno .bottom{
         min-width: 20rem;
-    }
+    } */
     /* Degustaciones------------------- */
     .degustaciones{
         width: 100%;
