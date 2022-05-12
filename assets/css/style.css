@@ -74,13 +74,13 @@ a{
 
 /* presentacion -----------*/
 .container__Principal{
+    width: 100%;
     position: absolute;
-    top: 25%;
-    left: 5%;
+    top: 35%;
     text-align: center;
 }
 .container__Principal h1{
-    margin: 1rem;
+    margin: 1rem auto;
     font-size: 4vw;
 }
 .container__Principal div{
@@ -92,7 +92,9 @@ a{
 }
 .container__Principal p{
     font-size: 16px;
-    margin: 0% 4rem;
+    margin: 0% auto;
+    width: 50%;
+    align-items: center;
 }
 
 
@@ -180,11 +182,12 @@ a{
 .desayuno  .bottom{
     position: absolute;
     top: 65%;
-    left: 34%;
-    /* display: block; */
+    width: 100%;
+    align-items: center;
+    right: 35%;
     border: 4px solid #f5f0ed;
     padding: 1rem 4rem; 
-    margin: auto;
+    margin: 0% auto;
     width: max-content;
     font-size: 14px;
 }
