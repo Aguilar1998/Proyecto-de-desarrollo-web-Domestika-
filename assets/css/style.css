@@ -34,9 +34,8 @@ a{
 
 /* Estilos generales ----------*/
 .section__Home{
-    padding: 0 1em;
     display: grid;
-    grid-template: repeat(3, 1fr) 80vh repeat(4, 1rem) / repeat(2, 1fr);
+    grid-template: repeat(3, 1fr) 80vh repeat(3, 1fr) 20vh / repeat(2, 1fr);
     grid-template-areas:
     "header           header"
     "header           header"
@@ -46,14 +45,12 @@ a{
     "degustaciones-3  degustaciones-4"
     "contacto         ubicacion"
     "footer           footer";
-    grid-gap: 20px;
 }
 
 /* Declaraciones de la seccion de header y su contenido...*/
 .section__NavBar{
     background-image: url(../image/Fondo1.jpg);
     background-size: cover;
-    /* background-position: ; */
     grid-area: header;
     display: grid;
     grid-template-columns: repeat(1,100%);
@@ -62,6 +59,7 @@ a{
     "navBar    navBar"
     "contenido contenido";
     height: 100vh;
+    min-height: 100%;
 }
 .navBar{
     grid-area: navBar;
@@ -93,6 +91,9 @@ a{
     align-items: center;
     grid-gap: 20px;
 }
+.contenido h1{
+    font-size: 4vw;
+}
 .contenido div{
     width: 10vh;
     height: 3px;
@@ -109,12 +110,14 @@ a{
 .container-1{
     grid-area: presentacion-1;
     background-color: #d03b40;
+    color: #f5f0ed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .container-1 h2{
+    font-size: 2vw;
     width: 40%;
     margin: 1rem 0;
     text-align: center;
@@ -130,12 +133,14 @@ a{
 .container-2{
     grid-area: presentacion-2;
     background-color: #ded6c0;
+    color: #d03b40;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .container-2 h2{
+    font-size: 2vw;
     width: 50%;
     margin: 1rem 0;
     text-align: center;
@@ -147,7 +152,7 @@ a{
 
 
 
-/* ------------------------------------------------------------------ */
+/* ___________________________________________________________________________ */
 
 .desayuno{
     background-image: url(../image/Fondo2.jpg);
@@ -160,42 +165,104 @@ a{
     align-items: center;
 }
 .desayuno h2{
+    font-size: 4vw;
+    margin: 1rem;
+}
+.desayuno div{
+    margin: 1rem;
+    width: 10vh;
+    height: 3px;
+    background-color: white;
+}
+.desayuno p{
     margin: 1rem;
 }
 .desayuno .bottom{
-    margin-top: 1rem;
+    margin: 2rem;
     padding: 1rem;
-    border: 2px solid white;
+    border: 3px solid white;
 }
 
 
 /* _________________________________________________________________________ */
 .degustaciones-1{
     grid-area: degustaciones-1;
-    background-color: orange;
+    background-color: #f5f0ed;
+    color: #3c3c3b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
 }
 .degustaciones-2{
     grid-area: degustaciones-2;
-    background-color: orange;
+    background-color: #f5f0ed;
+    color: #3c3c3b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
 }
 .degustaciones-3{
     grid-area: degustaciones-3;
-    background-color: red;
+    background-color: #f5f0ed;
+    color: #3c3c3b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
 }
 .degustaciones-4{
     grid-area: degustaciones-4;
-    background-color: orange;
+    background-color: #f5f0ed;
+    color: #3c3c3b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
 }
+
+
+
+/* _____________________________________________________________________________ */
+
 .contacto{
     grid-area: contacto;
-    background-color: blue;
+    background-color: #ded6c0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem;
 }
+.contacto h2{
+    font-size: 3vw;
+}
+
+
+
+/* ______________________________________________________________________________ */
 .ubicacion{
     grid-area: ubicacion;
-    background-color: red;
+    background-color: #d03b40;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem;
 }
+.ubicacion h2{
+    font-size: 3vw;
+    margin-bottom: 1rem;
+}
+
+
+/* ___________________________________________________________________________________ */
 .footer{
     grid-area: footer;
-    background-color: black;
+    background-color: #3c3c3b;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
 }
 
