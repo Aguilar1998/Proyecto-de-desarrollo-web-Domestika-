@@ -33,483 +33,89 @@ a{
 
 
 /* Estilos generales ----------*/
-
-
-/* navegador */
-.section img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-}
-.subMenu{
-    display: none;
-}
-.navBar{
-    background-color: none;
-}
-.section .navBar a img{
-    position: absolute;
-    left: 4em;
-    top: 2rem;
-    width: min-content;
-    height: min-content;
-}
-.navBar ul{
-    font-size: 2rem;
-    position: absolute;
-    right: 4em;
-    top: 3rem;
-}
-.navBar ul li{
-    margin: 0 1rem;
-    display: inline;
-    right: 1rem;
-    top: 1rem;
-}
-.navBar ul li:hover{
-    color: red;
-    border-bottom: 1px solid white;
+.section__Home{
+    padding: 1rem;
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(2, 50%);
+    grid-template-areas:
+    "header           header"
+    "header           header"
+    "presentacion-1   presentacion-2"
+    "desayuno         desayuno"
+    "degustaciones-1  degustaciones-2"
+    "degustaciones-3  degustaciones-4"
+    "contacto         ubicacion"
+    "footer           footer";
+    grid-gap: 20px;
+    width: 100vw;
 }
 
-/* presentacion -----------*/
+/* Declaraciones de grid*/
+.section__NavBar{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(4,1fr) ;
+    grid-template-areas: 
+    "navBar               navBar"
+    "container__Principal container__Principal"
+    "container__Principal container__Principal"
+    "container__Principal container__Principal";
+    background-color: blue;
+    height: 100vh;
+}
+/* .navBar{
+    grid-area: navBar;
+    background-color: aqua;
+} */
 .container__Principal{
-    width: 100%;
-    position: absolute;
-    top: 35%;
-    text-align: center;
-}
-.container__Principal h1{
-    margin: 1rem auto;
-    font-size: 4vw;
-}
-.container__Principal div{
-    width: 15%;
-    background-color: #f5f0ed;
-    height: 2px;
-    margin: 2rem auto;
-    max-width: 6rem;
-}
-.container__Principal p{
-    font-size: 16px;
-    margin: 0% auto;
-    width: 50%;
-    align-items: center;
+    grid-area: container__Pincipal;
+    background-color: red;
 }
 
-
-/* invitacion --------*/
+/* ------------------------------------------------------------------ */
 
 .container-2{
-    background-color: #d03b40;
-    width: 50%;
-    height: 25em;
-    text-align: center;
-    padding: 8rem 0;
-    float: left;
-}
-.container-2 h2{
-    width: 50%;
-    margin: 1rem auto;
-    font-size: 1.8em;
-}
-.container-2 p{
-    width: 70%;
-    margin: 1rem auto;
-    font-size: 16px;
-}
+    grid-area: presentacion-1;
+    background-color: green;
 
-
+}
 .container-3{
-    display: inline-block;
-    background-color: #f5f0ed;
-    color: #d03b40;
-    width: 50%;
-    height: 25em;
-    text-align: center;
-    padding: 8rem 0;
-}
-.container-3 h2{
-    width: 60%;
-    margin: 1rem auto;
-    font-size: 1.8em;
-}
-.container-3 p{
-    width: 70%;
-    margin: 1rem auto;
-    font-size: 16px;
-}
+    grid-area: presentacion-2;
+    background-color: purple;
 
-
-
-/* invitacion al Desayuno -------------*/
+}
 .desayuno{
-    text-align: center;
-    position: relative;
-}
-.desayuno img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-}
-.desayuno h2{
-    width: 50%;
-    position: absolute;
-    top: 15%;
-    left: 25%;
-    font-size: 4vw;
-    margin: auto;
-}
-.desayuno div{
-    background-color: #f5f0ed;
-    position: absolute;
-    top: 30%;
-    left: 46%;
-    width: 10%;
-    height: 2px;
-    max-width: 6rem;
-}
-.desayuno p{
-    position: absolute;
-    top: 35%;
-    left: 24%;
-    width: 50%;
-    margin: auto;
-    font-size: 16px;
-}
+    grid-area: desayuno;
+    background-color: gray;
 
-.desayuno  .bottom{
-    position: absolute;
-    top: 65%;
-    width: 100%;
-    align-items: center;
-    right: 35%;
-    border: 4px solid #f5f0ed;
-    padding: 1rem 4rem; 
-    margin: 0% auto;
-    width: max-content;
-    font-size: 14px;
 }
-
-/* Contactos y ubicacion------------------- */
-
-.degustaciones{
+.degustaciones-1{
+    grid-area: degustaciones-1;
+    background-color: orange;
+}
+.degustaciones-2{
+    grid-area: degustaciones-2;
+    background-color: orange;
+}
+.degustaciones-3{
+    grid-area: degustaciones-3;
     background-color: red;
-    position: relative;
-    background-color:  #f5f0ed;
-    width: 50%;
-    float: left;
-    height: 16em;
-    padding: 4rem auto 0;
 }
-.degustaciones img{
-    float: left;
-    margin: 4rem 0;
-    padding: 0 2rem;
-    min-width: 5rem;
+.degustaciones-4{
+    grid-area: degustaciones-4;
+    background-color: orange;
 }
-.degustaciones h2{
-    color: #3c3c3b;
-    margin: 4rem 0 0;
-    width: 100%;
-}
-.degustaciones p{
-    text-align: left;
-    color: rgb(118, 102, 102);
-    font-size: 16px;
-}
-
-
-
-/*Contacto/sobre nosotros-------------------*/
 .contacto{
-    background-color: #ffedbb;
-    color: #d03b40;
-    width: 50%;
-    text-align: center;
-    float: left;
-    height: 20em;
-    font-size: 24px;
-}
-.contacto h2{
-    width: 50%;
-    margin: auto;
-    padding: 6rem 0 2rem;
-}
-.contacto p{
-    width: 70%;
-    margin: auto;
-    font-size: 16px;
+    grid-area: contacto;
+    background-color: blue;
 }
 .ubicacion{
-    width: 50%;
-    text-align: center;
-    background-color: #d03b40;
-    color: #fde1d0e2;
-    height: 20em;
-    float: left;
-    font-size: 24px;
+    grid-area: ubicacion;
+    background-color: red;
 }
-.ubicacion h2{
-    width: 50%;
-    margin: auto;
-    padding: 6rem 0 2rem;
-}
-.ubicacion p{
-    width: 70%;
-    margin: auto;
-    font-size: 16px;
-}
-
-/* footer------------------- */
-
 .footer{
-    background-color: #3c3c3b;
-    color: #f5f0ed;
-    width: 100%;
-    height: 16rem;
-    clear: both;
-    padding: 5rem 0 5rem 2rem;
+    grid-area: footer;
+    background-color: black;
 }
 
-
-
-
-
-
-/*Para implementar @query y realizar un full responsive necesite crear varios @query...(max-width:1000/800/700px)*/
-
-@media (max-width:1250px){
-    .section{
-        min-width: 900px;
-        position: relative;
-        
-    }
-    .section .navBar{
-        display: none;
-    } 
-    .section .subMenu{
-        display: block;
-        position: absolute;
-        top: 1rem;
-        left: 2em;
-    } 
-    .section .subMenu ul{
-        margin-top: 5rem;
-        font-size: x-large;
-        padding-bottom: 1rem;
-    }
-    .section .subMenu a img{
-        position: absolute;
-        width: max-content;
-        height: min-content;
-        top: 2px;
-        left: 3px;
-    }
-    .section .subMenu ul li{
-        margin: 1rem 0;
-    }
-    .subMenu ul li:hover{
-        border-bottom: 1px solid white;
-        width: 20%;
-    }
-    .container__Principal{
-        position: absolute;
-        left: 2%;
-        top: 50%;
-    }
-    .container__Principal h1{
-        font-size: 4vw;
-    }
-}
-/* media de 1000px----------------------- */
-@media (max-width:1000px){
-    /* invitacion -------- */
-    .container-2{
-        width: 50%;
-        height: 25em;
-    }
-    .container-2 h2{
-        width: 80%;
-        font-size: 3vw;
-    }
-    .container-2 p{
-        font-size: 16px;
-    }
-
-    /* Invitacion 2 ---------- */
-    .container-3{
-        width: 50%;
-        height: 25em;
-        /* padding: 8rem 1rem; */
-    }
-    .container-3 h2{
-        width: 80%;
-        font-size: 3vw;
-    }
-    .container-3 p{
-        width: 80%;
-        font-size: 16px;
-    }
-    
-    /* invitacion al Desayuno ------------- */
-    /* .desayuno{
-        height: 24rem;
-    }
-    .desayuno h2{
-        padding-top: 5rem;
-        font-size: 40px;
-    }
-    .desayuno p{
-        font-size: 18px;
-    }
-
-    .desayuno  .bottom{
-        font-size: 10px;
-        margin-top: 1rem 0;
-    } */
-
-    /* Contactos y ubicacion------------------- */
-    .degustaciones{
-        height: 22em;
-        font-size: 13px;
-    }
-    .degustaciones img{
-        margin: 2rem 0;
-        padding: 0 1rem;
-    }
-    .degustaciones p{
-        text-align: left;
-        color: rgb(118, 102, 102);
-    }
-
-    /* Contacto/sobre nosotros------------------- */
-    .contacto{
-        background-color: #ffedbb;
-        color: #d03b40;
-        width: 50%;
-        text-align: center;
-        float: left;
-        height: 20em;
-    }
-    .contacto h2{
-        width: 50%;
-        margin: auto;
-        padding: 6rem 0 2rem;
-        font-size: 16px;
-    }
-    .contacto p{
-        width: 70%;
-        margin: auto;
-        font-size: 15px;
-    }
-    .contacto a{
-        font-size: 15px;
-    }
-    .ubicacion{
-        width: 50%;
-        height: 20em;
-    }
-    .ubicacion h2{
-        padding: 6rem 0 2rem;
-        font-size: 16px;
-    }
-    .ubicacion p{
-        width: 70%;
-        margin: auto;
-        font-size: 15px;
-    }
-}
-
-
-/* media de 800px------------------------ */
-@media (max-width:800px) {
-    /* .desayuno{
-        min-height: 35rem;
-    }
-    .desayuno .bottom{
-        min-width: 20rem;
-    } */
-    /* Degustaciones------------------- */
-    .degustaciones{
-        width: 100%;
-    }
-    .degustaciones img{
-        height: 11rem;
-    }
-    .degustaciones h2{
-        width: 100%;
-        font-size: 16px;
-    }
-    .degustaciones p{
-        width: 100%;
-    }
-}
-
-
-/* media de 700px------------------------ */
-@media (max-width:900px){
-    .section .container__Principal{
-        margin: 0 2rem;
-    }
-    .section .container__Principal h1{
-        font-size: 4vh;
-    }
-
-    /*invitacion --------*/
-    .container-2{
-        width: 100%;
-        padding: 8rem 0;
-        float: none;
-        min-width: 880px;
-    }
-
-    /*Invitacion 2 ---------- */
-    .container-3{
-        width: 100%;
-        min-width: 880px;
-    }
-    
-    /* invitacion al Desayuno -------------*/
-    .desayuno{
-        width: 100%;
-        min-width: 880px;
-    }
-    .desayuno div{
-        width: 15%;
-    }
-    .desayuno .bottom{
-        width: 35%;
-    }
-
-    /* Degustaciones------------------- */
-    .degustaciones{
-        margin: 0 1rem;
-        min-width: 880px;
-    }
-    .degustaciones h2{
-        width: 90%;
-        font-size: 20px;
-    }
-    .degustaciones p{
-        width: 90%;
-        font-size: 16px;
-    }
-
-    /*Contacto/sobre nosotros-------------------*/
-    .contacto{
-        min-width: 880px;
-    }
-    .ubicacion{
-        width: 50%;
-        height: 20em;
-        min-width: 880px;
-    }
-
-    /* Footer------------------- */
-
-    .footer{
-        min-width: 880px;
-    }
-}
