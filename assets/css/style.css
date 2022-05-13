@@ -269,7 +269,7 @@ a{
 @media (max-width:1000px) {
     .section__Home{
         display: grid;
-        grid-template: repeat(4, 1fr)  80vh repeat(4, 40vh) repeat(2,1fr)  20vh / repeat(1, 100%);
+        grid-template: repeat(4, 1fr)  80vh repeat(4, 40vh) repeat(2,1fr)  20vh / repeat(1, 100vh);
         grid-template-areas:
         "header"
         "header"
@@ -283,43 +283,5 @@ a{
         "contacto"
         "ubicacion"
         "footer";
-    }
-
-    .degustaciones-1{
-        grid-area: degustaciones-1;
-        background-color: #f5f0ed;
-        color: #3c3c3b;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 2rem;
-    }
-    .degustaciones-2{
-        grid-area: degustaciones-2;
-        background-color: #f5f0ed;
-        color: #3c3c3b;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 2rem;
-    }
-    .degustaciones-3{
-        grid-area: degustaciones-3;
-        background-color: #f5f0ed;
-        color: #3c3c3b;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 2rem;
-        
-    }
-    .degustaciones-4{
-        grid-area: degustaciones-4;
-        background-color: #f5f0ed;
-        color: #3c3c3b;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 2rem;
     }
 }
